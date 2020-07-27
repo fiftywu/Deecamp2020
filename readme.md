@@ -1,8 +1,8 @@
-# Visualization of 3-D Object
+# Tracking and Visualization for Point Cloud 3D Object Detection
 
 >  **>>> By Deecamp Focus-Det Group <<<**
 
-### 1 Set up running environment
+### 1 Dependency
 
 ```pyth
 pip install -r requirements
@@ -24,7 +24,7 @@ python visualization_with_tracking.py -d your_dets_dir -l your_lidar_dir -e your
 
 - **description**
 
-After obtaining 3-d object detection result based on point cloud, we track the objects by AB3DMOT Model frame by frame. To visualize the result, you need to feed the detections directory (dets_dir) which includes some text files (.txt), lidar point directory (lidar_dir) which includes some lidar data files (.bin), and tracking result directory  (eval_dir) .
+After obtaining 3-d object detection result based on point cloud, we track the objects by AB3DMOT model frame by frame. To visualize the result, you need to feed the detections directory (dets_dir) which includes some text files (.txt), LiDAR  directory (lidar_dir) which includes some point cloud data files (.bin), and tracking result directory  (eval_dir) .
 
 ### 3 Visualization after tracking
 
@@ -42,17 +42,13 @@ python visualization_with_tracking.py -d your_dets_dir -l your_lidar_dir
 
 - **description**
 
-After obtaining 3-d object detection result based on point cloud, we track the objects by AB3DMOT Model frame by frame. Then tracking result will be obtained. To visualize the result, you need to feed the detections directory (dets_dir) which includes some text files (.txt), and lidar point directory (lidar_dir) which includes some lidar data files (.bin).
+We track the objects by AB3DMOT model frame by frame after obtaining 3-d object detection result. Then tracking result will be obtained. To visualize the result, you need to feed the detections directory (dets_dir) which includes some text files (.txt), and LiDAR directory (lidar_dir) which includes some point cloud data files (.bin).
 
 ### 4 Format of 3-d object detection result format
 
 | 0    | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 10   | 11   | 12   | 13   | 14   | 15   |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | type | -    | -    | -    | -    | -    | -    | -    | w    | l    | h    | x    | y    | z    | r_y  | conf |
-
-```
-label 1,2,3,4,5,6,7,w,l,h,x,y,z,theta,score
-```
 
 ### 5 Format of tracking result
 
