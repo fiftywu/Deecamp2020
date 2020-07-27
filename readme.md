@@ -56,7 +56,15 @@ We track the objects by AB3DMOT model frame by frame after obtaining 3-d object 
 | ----- | ---- | ---- | --------- | -------- | ----- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | frame | id   | type | truncated | occluded | alpha | 2d   | 2d   | 2d   | 2d   | h    | w    | l    | x    | y    | z    | r_y  | conf |
 
+### 6 Example visualization
 
+- **shortcut**
+
+![shortcut](https://github.com/FiftyWu/Deecamp2020/blob/master/tracking_visualization/example_pictures/shortcut.png) 
+
+- **shortcut-focus**
+
+![shortcut-focus](https://github.com/FiftyWu/Deecamp2020/blob/master/tracking_visualization/example_pictures/shortcut-focus.png)
 
 ## Reference
 
